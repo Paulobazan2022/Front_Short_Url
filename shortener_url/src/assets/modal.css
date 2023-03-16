@@ -1,0 +1,83 @@
+.asideContainer {
+    width: 25%;
+}
+
+.containerModal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 21%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerModal_1 {
+    display: flex;
+    width: 350px;
+    min-height: 100px;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.btnModalEmployees {
+    margin: 20px 0;
+    padding: 13px 13px;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #125C98;
+    border: 2px solid #000000;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+button:hover {
+    background: #f2f2f2;
+}
+
+.btnModalEmployees:hover {
+    color: #000000;
+}
+
+.containerModal_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(3, 3, 113);
+    background-color: azure;
+}
+
+.containerModal_text_Red {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(188, 26, 26);
+    background-color: azure;
+}
+
+
+.textModal {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.textModal_P {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}

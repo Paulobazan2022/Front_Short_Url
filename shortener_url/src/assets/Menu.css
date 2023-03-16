@@ -1,0 +1,51 @@
+.justify-content-md-center {
+    padding: 2.5rem
+}
+
+.text_Home {
+    font-size: 10vh;
+}
+
+.container_input {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 1.5rem;
+    background-color: rgb(230, 230, 230);
+    align-items: center;
+    gap: 2rem;
+}
+
+.input_1 {
+    width: 50vw;
+    border-radius: 0.5rem;
+    padding: 0.7vw
+}
+
+.col-md-10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.col-md-4 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container_short{
+    padding: 0.5rem;
+}
+
+.short_url{
+    color: blue;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.logo_home{
+    width: 17rem;
+}
