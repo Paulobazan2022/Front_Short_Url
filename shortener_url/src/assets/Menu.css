@@ -1,7 +1,12 @@
 .justify-content-md-center {
-    padding: 2.5rem
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-items: center;
 }
-
+.col-md-5{
+    justify-items: center;
+}
 .text_Home {
     font-size: 10vh;
 }
@@ -47,7 +52,16 @@
 }
 
 .logo_home{
-    width: 17rem;
+    width: 50%;
+    height: auto;
+}
+
+@supports(object-fit: cover){
+    .logo_home{
+      height: 50%;
+      object-fit: cover;
+      object-position: center center;
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -165,3 +179,4 @@
     }
     
 }
+

@@ -58,11 +58,14 @@ const Home = () => {
         </div>
         <Container >
             {shortUrl && <Row className="container_short">
-
-                <Col md="10">
+<Col></Col>
+                <Col md="4">
                     <h3>Tu Url acotada es la siguiente....</h3>
+                </Col>
+                <Col md="4">
                     <a className='short_url' onClick={() => sendFull(shortUrl)}>{`http://localhost:3000/${shortUrl}`}</a>
                 </Col>
+                <Col></Col>
             </Row>}
 
         </Container>
