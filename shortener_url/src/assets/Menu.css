@@ -49,3 +49,119 @@
 .logo_home{
     width: 17rem;
 }
+
+@media (max-width: 1199.98px) {
+
+    .logo_home{
+        width: 17rem;
+    }
+    
+
+    .text_Home {
+        font-size: 10vh;
+    }
+
+    .container_input {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 1.5rem;
+        background-color: rgb(230, 230, 230);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .short_url{
+        color: blue;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width:991.98px) {
+
+    .logo_home{
+        width: 17rem;
+    }
+    
+
+    .text_Home {
+        font-size: 8vh;
+    }
+
+    .container_input {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 1.5rem;
+        background-color: rgb(230, 230, 230);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .short_url{
+        color: blue;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width:767.98px) {
+
+    .logo_home{
+        width: 14rem;
+    }
+    
+
+    .text_Home {
+        font-size: 8vh;
+    }
+
+    .container_input {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 1.5rem;
+        background-color: rgb(230, 230, 230);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .short_url{
+        color: blue;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width:576px) {
+
+    .logo_home{
+        width: 10rem;
+    }
+    
+
+    .text_Home {
+        font-size: 5vh;
+    }
+
+    .container_input {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 1.5rem;
+        background-color: rgb(230, 230, 230);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .short_url{
+        color: blue;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+}
