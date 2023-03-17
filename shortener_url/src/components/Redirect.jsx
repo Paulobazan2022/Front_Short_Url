@@ -1,7 +1,7 @@
 import UrlsManager from '../services/Urls.Api';
-import { redirect, useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 const Redirect = () => {
 

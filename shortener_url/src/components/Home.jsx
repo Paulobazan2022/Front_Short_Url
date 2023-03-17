@@ -31,7 +31,7 @@ const Home = () => {
     }
 
     const sendFull = (shortUrl) => {
-        window.open(`http://localhost:3000/${shortUrl}`)
+        window.open(`https://front-short-url.pages.dev/${shortUrl}`)
     }
     return <>
         <NavBar />
@@ -63,7 +63,7 @@ const Home = () => {
                     <h3>Tu Url acotada es la siguiente....</h3>
                 </Col>
                 <Col md="4">
-                    <a className='short_url' onClick={() => sendFull(shortUrl)}>{`http://localhost:3000/${shortUrl}`}</a>
+                    <a className='short_url' onClick={() => sendFull(shortUrl)}>{`https://front-sho/${shortUrl}`}</a>
                 </Col>
                 <Col></Col>
             </Row>}
