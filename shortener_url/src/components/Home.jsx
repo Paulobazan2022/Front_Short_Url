@@ -31,7 +31,7 @@ const Home = () => {
     }
 
     const sendFull = (shortUrl) => {
-        window.open(`https://front-short-url.pages.dev/${shortUrl}`)
+        window.open(`${process.env.REACT_APP_URL}/${shortUrl}`)
     }
     return <>
         <NavBar />
@@ -63,7 +63,7 @@ const Home = () => {
                     <h3>Tu Url acotada es la siguiente....</h3>
                 </Col>
                 <Col md="4">
-                    <a className='short_url' onClick={() => sendFull(shortUrl)}>{`https://front-sho/${shortUrl}`}</a>
+                    <a className='short_url' onClick={() => sendFull(shortUrl)}>{`${process.env.REACT_APP_URL}/${shortUrl}`}</a>
                 </Col>
                 <Col></Col>
             </Row>}

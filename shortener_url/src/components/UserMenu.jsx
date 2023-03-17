@@ -74,7 +74,7 @@ const UserMenu = () => {
                                 <tr>
                                     <td><p>URL Actual... {data.fullurl}</p>
                                         <input type="text" className='input_UserMen' onChange={(e) => setNewUrl(e.target.value)} /></td>
-                                    <td><p>{`http://localhost:3000/${data.shortUrl}`}</p></td>
+                                    <td><p>{`${process.env.REACT_APP_URL}/${data.shortUrl}`}</p></td>
                                     <td>
                                         <Button variant='outline-secondary' size='sm' onClick={() => setUrl(data.idUrl)}>MODIFICAR</Button>
                                         <Button variant='outline-secondary' size='sm' onClick={() => deleteUrl(data.idUrl)}>BORRAR</Button>
