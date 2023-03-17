@@ -6,10 +6,15 @@ import Button from 'react-bootstrap/Button';
 import '../assets/NavBar.css'
 import { useNavigate } from 'react-router-dom';
 import { useUserContext } from '../context/Context.User'
+import { useState } from 'react';
 
 function NavBar() {
     const navigate = useNavigate()
     const contextUser = useUserContext()
+
+    const LogOut = async () => {
+        await contextUser.setUser([{ isLogin: false }])
+    }
     return (
         <Navbar bg="light" expand="lg">
             <Container >
@@ -26,8 +31,12 @@ function NavBar() {
                     </Nav>
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
-                    <Button variant="light" onClick={() => navigate("/log-in")} size='lg'>Iniciar Sesion</Button>
-                    <Button variant="light" onClick={() => navigate("/users/register")} size='lg'>Registro</Button>
+                    {!contextUser.user[0].isLogin && (<>
+                        <Button variant="light" onClick={() => navigate("/log-in")} size='lg'>Iniciar Sesion</Button>
+                        <Button variant="light" onClick={() => navigate("/users/register")} size='lg'>Registro</Button>
+                    </>)}
+                    {contextUser.user[0].isLogin && <Button variant="light" onClick={() => LogOut()} size='lg'>Cerrar Sesion</Button>}
+
                     <Navbar.Text>
                         <p>{contextUser.user.name}</p>
                     </Navbar.Text>
