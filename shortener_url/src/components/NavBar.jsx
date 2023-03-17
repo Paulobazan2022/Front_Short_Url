@@ -27,7 +27,6 @@ function NavBar() {
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
                     <Button variant="light" onClick={() => navigate("/log-in")} size='lg'>Iniciar Sesion</Button>
-                    <Button variant="light" onClick={() => Sing_out()} size='lg'>Cerrar Sesion</Button>
                     <Button variant="light" onClick={() => navigate("/users/register")} size='lg'>Registro</Button>
                     <Navbar.Text>
                         <p>{contextUser.user.name}</p>
