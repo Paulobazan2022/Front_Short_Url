@@ -43,7 +43,7 @@ const Home = () => {
                 <Col md="5">
                     <h1 className='text_Home'>Acorta los enlaces de tu Dominio</h1>
                     <br />
-                    <h4>Acorta, gestiona y comparte tus urls</h4>
+                    <h4>Acorta, gestiona y comparte tus URLS</h4>
                 </Col>
 
             </Row>
